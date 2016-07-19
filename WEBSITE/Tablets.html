@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>TABLETS</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/tablet.js"></script>
+        <link rel="stylesheet" href="css/CSSHome.css">
+        <link rel="stylesheet" href="css/DevicesCSS.css">
+    </head>
+    <body onload="allTablets()">
+        <div class="content">
+        
+            <div id="container">
+                <div class="btn-group" role="group">
+                   <a href="WWA.html"><button type="button" class="btn WWAGRbutton" style="margin-left: 4px" href="WWA.html">Who We Are</button></a>
+                   <a href="theGroup.html"><button type="button" class="btn WWAGRbutton">The Group</button></a>
+                </div>
+                <a href="index.html" class="pull-right">
+                    <div id="logo"></div>
+                </a>
+                <nav class="navbar navbar-default" role="navigation" style="margin-top: 30px; border:0">
+                    <div class="container-fluid top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>  
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="nav-collapse" style="padding: 0">
+                            <ul class="nav navbar-nav" style="width: 100%">
+                                <div class="dropdown" style="width: 25%; text-align: center">
+                                    <a href="Devices.html"><button class="dropbtn">Devices</button></a>
+                                    <div class="dropdown-content">
+                                        <a href="Smartphones.html">Smartphones</a>
+                                        <a href="Tablets.html">Tablets and PC</a>
+                                        <a href="Networking.html">Modem and Networking</a>
+                                        <a href="SmartLiving.html">TV and Smart Living</a>
+                                        <a href="Outlet.html">Outlet</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown" style="width: 25%; text-align: center">
+                                    <a href="SLServices.html"><button class="dropbtn">SL Services</button></a>
+                                    <div class="dropdown-content">
+                                        <a href="SLServices-tv.html">TV and Entertainment</a>
+                                        <a href="SLServices-salute.html">Health and Wellness</a>
+                                        <a href="SLServices-casa.html">Home and Family</a>
+                                        <a href="SLServices-servizi.html">Personal Services</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown" style="width: 23%; text-align: center">
+                                    <a href="AssistanceServices.html"><button class="dropbtn">Assistance Services</button></a>
+                                    <div class="dropdown-content">
+                                        <a href="AssistanceServices-GestioneLinea.html">Line and Service Management</a>
+                                        <a href="AssistanceServices-ControlloPagamento.html">Costs and Payements Control</a>
+                                        <a href="AssistanceServices-SupportoTecnico.html">Technical Support</a>
+                                        <a href="AssistanceServices-SmartLife.html">Smart Life</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown" style="width: 25%; text-align: center">
+                                    <a href="Promotions.html"><button class="dropbtn">Promotions</button></a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Devices.html">Devices</a></li>
+                <li class="active">Tablets</li>
+            </ul>
+
+            <div id="filter">
+                <select id="selector" name="Brand" onchange="selectFilter()">
+					<option selected value="">Choose a Brand</option>
+                    <option value="samsung">Samsung</option>
+					<option value="acer">Acer</option>
+                    <option value="apple">Apple</option>
+                    <option value="htc">HTC</option>
+                    <option value="sony">Sony</option>
+                    <option value="motorola">Motorola</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="lg">LG</option>
+                    <option value="nokia">Nokia</option>
+                    <option value="blackberry">Blackberry</option>
+                </select>
+                <select id="selector" name="Price" onchange="selectFilter()">
+					<option selected value="">Choose a Price</option>
+                    <option value="1">0-50</option>
+                    <option value="2">51-100</option>
+                    <option value="3">101-200</option>
+                    <option value="4">201-400</option>
+                    <option value="5">401-700</option>
+                    <option value="6">700+</option>
+                </select>
+                <select id="selector" name="OS" onchange="selectFilter()">
+					<option selected value="">Choose a OS</option>
+                    <option value="ios">iOS</option>
+                    <option value="android">Android</option>
+                    <option value="windows">Windows</option>
+                </select>
+            </div>
+
+            <div class="devices"></div>
+
+            <div class="footer" style="background-color: #003d97">
+                <p class="navbar-text"><a href="index.html" style="color: white">Home</a></p>
+                <p class="navbar-text"><a href="Devices.html" style="color: white">Devices</a></p>
+                <p class="navbar-text"><a href="SLServices.html" style="color: white">SL services</a></p>
+                <p class="navbar-text"><a href="AssistanceServices.html" style="color: white">Assistance Services</a></p>
+                <p class="navbar-text"><a href="theGroup.html" style="color: white">The Group</a></p>
+                <p class="navbar-text"><a href="WWA.html" style="color: white">Who We Are</a></p>
+                <p class="navbar-text navbar-right" style="color: white; margin-right: 5px">Telecom Italia 2012 - P.IVA 00488410010</p>
+            </div>
+        </div>
+    </body>
+</html>

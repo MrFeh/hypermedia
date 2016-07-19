@@ -1,0 +1,212 @@
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+.content{
+    padding-bottom: 50px;
+    min-height:100%;
+    min-width: 1080px;
+    position: relative;
+}
+
+.device {
+    width: 25vw;
+    height: 30vw;    
+    
+    display:inline-block;
+    padding: 0;
+    margin: 1.5%;
+    margin-top:80px; 
+    margin-bottom:80px;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAAAAA;
+}
+
+.devices  {
+    width: 100%;
+    text-align:center;
+}
+
+.footer {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #003d97;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003d97;
+    text-align: center;
+    width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    text-shadow: 0px 0px 3px white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #003d97;
+    text-shadow: 0px 0px 3px white;
+}
+
+/*Il logo*/
+#logo {
+    position: relative;
+    height: 80px;
+    width: 200px;
+    background-image: url(../Immagini_Progetto/TIM_logo_2016.svg.png);
+    background-size: 200px 80px;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+.top {
+    height: 50px;
+    position: relative;
+    background-color: #003d97;
+    padding: 0;
+    width: 100%;
+}
+/*Il contenitore dei link nell'header*/
+#container {
+    height: 143px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.WWAGRbutton {
+    margin-top: 8px;
+    height: 55px;
+    width: 120px;
+    background-color: #003d97;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.name {
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.price {
+	font-size: 1.5vw;
+	text-align: center;
+	color: firebrick;
+}
+
+.image {
+	height:17vw; 
+	width:auto;
+	margin: 5%;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Container for the images in the Homepage*/
+#container1 {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+}
+
+.carousel-inner > .item > a > img {
+  width: 100%;
+  height: 300px;
+}
+
+.popover {
+    min-width: 800px;
+    height: 450px;
+}
+
+#mytab {
+    position: absolute;
+    top: 163px;
+    right: 3px;
+    width: 65%;
+}
+
+#img-with-text {
+    font-size: 25px;
+    width: 24%;
+    height: 350px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+@media(max-width:1080px) {
+	.name {
+		font-size: 16.5px;
+	}
+	
+	.price {
+		font-size: 16.5px;
+	}
+	
+	.image {
+		height: 184px;
+		width: auto;
+	}
+	
+	.device {
+		width: 270px;
+		height: 270px;
+	}
+	
+	.block {
+		width: 216px;
+		height: 216px;
+	}
+}

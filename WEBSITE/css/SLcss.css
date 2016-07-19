@@ -1,0 +1,79 @@
+h1{
+    font-size: 2vw;
+    text-align: center;
+    color: #003d97;
+    position: relative;
+    top: 45%;
+    margin-left: 50%;
+}
+
+h2{
+   font-size: 2vw;
+    text-align: center;
+    color: #003d97;
+    position: relative;
+    top: 45%;
+    margin-right: 50%; 
+}
+
+h3{
+    text-align: center;
+    margin-left: 25%;
+    font-size: 3vw;
+    position: relative;
+    top: 20%
+}
+
+h4{
+    text-align: center;
+    margin-right: 25%;
+    font-size: 3vw;
+    position: relative;
+    top: 20%
+}
+
+.sm {
+    width: 100%;
+    text-align: center;
+}
+
+.topics {
+    width: 100%;
+
+    text-align:center;
+}
+
+.topic {
+	width: 80%;
+    height: auto;    
+
+    display:inline-block;
+    padding: 0;
+    margin: 1.5%;
+   
+}
+
+.block {
+	width: 40%;
+    height: auto;    
+	
+	vertical-align: middle;
+    display:inline-block;
+    padding: 0;
+   
+}
+
+@media(max-width:1080px){
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 40px;
+    }
+}
